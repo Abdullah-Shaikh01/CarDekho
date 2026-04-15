@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 import cars from "../cars.json" with { type: "json" };
-import { calculateScore, getReasons } from "../utils/scoring.js";
+import { getRecommendedCars } from "../utils/recommendation.js";
 
 router.post("/", (req, res) => {
   try {
@@ -9,31 +9,13 @@ router.post("/", (req, res) => {
     if (!budget || !type || !fuel || !weights) {
       return res.status(400).json({ error: "Missing required fields" });
     }
-    let filtered = cars.filter(
-      (car) =>
-        car.price >= budget * 0.9 &&
-        car.price <= budget * 1.1 &&
-        (car.type === type || type.toLowerCase() === "any") &&
-        (car.fuel === fuel || fuel.toLowerCase() === "any"),
-    );
-    if (filtered.length < 3) {
-      filtered = cars.filter(
-        (car) =>
-          (car.type === type || type.toLowerCase() === "any") &&
-          (car.fuel === fuel || fuel.toLowerCase() === "any"),
-      );
-    }
-    let scored = filtered.map((car) => ({
-      name: car.name,
-      price: car.price,
-      type: car.type,
-      fuel: car.fuel,
-      score: calculateScore(car, weights),
-      reasons: getReasons(car),
-    }));
-    scored.sort((a, b) => b.score - a.score || a.price - b.price);
-    const top3 = scored.slice(0, 3);
-    res.json({ cars: top3 });
+    const recommended = getRecommendedCars(cars, {
+      budget,
+      type,
+      fuel,
+      weights,
+    });
+    res.json({ cars: recommended });
   } catch (error) {
     res.status(500).json({ error: "Internal server error" });
   }

@@ -7,13 +7,13 @@ function calculateScore(car, weights) {
   );
 }
 
-function getReasons(car) {
+function getReasons(car, budget) {
   let reasons = [];
   if (car.safety >= 8) reasons.push("High safety rating");
   if (car.mileage >= 8) reasons.push("Fuel efficient");
   if (car.comfort >= 8) reasons.push("Comfortable ride");
   if (car.performance >= 8) reasons.push("Strong performance");
-  reasons.push("Fits your budget");
+  if (car.price <= budget) reasons.push("Fits your budget");
   return reasons;
 }
 

@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Toyota Fortuner",
+    "price": 35,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 6,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 8
+  },
+  {
+    "name": "Mahindra Scorpio",
+    "price": 15,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 8,
+    "safety": 7,
+    "performance": 7,
+    "comfort": 7
+  },
+  {
+    "name": "Tata Safari",
+    "price": 18,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 7,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Hyundai Creta",
+    "price": 12,
+    "type": "SUV",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 8,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Kia Seltos",
+    "price": 14,
+    "type": "SUV",
+    "fuel": "Petrol",
+    "mileage": 7,
+    "safety": 9,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Jeep Compass",
+    "price": 20,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 6,
+    "safety": 8,
+    "performance": 8,
+    "comfort": 7
+  },
+  {
+    "name": "MG Hector",
+    "price": 16,
+    "type": "SUV",
+    "fuel": "Petrol",
+    "mileage": 7,
+    "safety": 8,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Volkswagen Taigun",
+    "price": 13,
+    "type": "SUV",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Renault Duster",
+    "price": 11,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 9,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  },
+  {
+    "name": "Ford Endeavour",
+    "price": 30,
+    "type": "SUV",
+    "fuel": "Diesel",
+    "mileage": 5,
+    "safety": 9,
+    "performance": 9,
+    "comfort": 8
+  },
+  {
+    "name": "Honda City",
+    "price": 12,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 9,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Toyota Camry",
+    "price": 40,
+    "type": "Sedan",
+    "fuel": "Hybrid",
+    "mileage": 6,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 9
+  },
+  {
+    "name": "Hyundai Verna",
+    "price": 11,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Skoda Octavia",
+    "price": 25,
+    "type": "Sedan",
+    "fuel": "Diesel",
+    "mileage": 7,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 8
+  },
+  {
+    "name": "Volkswagen Vento",
+    "price": 10,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 8,
+    "performance": 7,
+    "comfort": 7
+  },
+  {
+    "name": "Maruti Ciaz",
+    "price": 9,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Tata Tigor",
+    "price": 6,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 10,
+    "safety": 6,
+    "performance": 5,
+    "comfort": 6
+  },
+  {
+    "name": "Kia Carnival",
+    "price": 35,
+    "type": "Sedan",
+    "fuel": "Diesel",
+    "mileage": 5,
+    "safety": 9,
+    "performance": 7,
+    "comfort": 9
+  },
+  {
+    "name": "Nissan Sunny",
+    "price": 8,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  },
+  {
+    "name": "Ford Aspire",
+    "price": 7,
+    "type": "Sedan",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 6,
+    "performance": 5,
+    "comfort": 6
+  },
+  {
+    "name": "Maruti Swift",
+    "price": 6,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  },
+  {
+    "name": "Hyundai i20",
+    "price": 7,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 8,
+    "performance": 7,
+    "comfort": 7
+  },
+  {
+    "name": "Tata Tiago",
+    "price": 5,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 10,
+    "safety": 6,
+    "performance": 5,
+    "comfort": 5
+  },
+  {
+    "name": "Kia Sonet",
+    "price": 8,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Renault Kwid",
+    "price": 4,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 10,
+    "safety": 5,
+    "performance": 4,
+    "comfort": 4
+  },
+  {
+    "name": "Volkswagen Polo",
+    "price": 6,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  },
+  {
+    "name": "Ford Figo",
+    "price": 5,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 9,
+    "safety": 6,
+    "performance": 5,
+    "comfort": 5
+  },
+  {
+    "name": "Mahindra KUV100",
+    "price": 6,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  },
+  {
+    "name": "Datsun GO",
+    "price": 4,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 10,
+    "safety": 5,
+    "performance": 4,
+    "comfort": 4
+  },
+  {
+    "name": "Toyota Glanza",
+    "price": 7,
+    "type": "Hatchback",
+    "fuel": "Petrol",
+    "mileage": 8,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 6
+  }
+]

@@ -13,9 +13,16 @@ router.post("/", (req, res) => {
       (car) =>
         car.price >= budget * 0.9 &&
         car.price <= budget * 1.1 &&
-        car.type === type &&
-        car.fuel === fuel,
+        (car.type === type || type.toLowerCase() === "any") &&
+        (car.fuel === fuel || fuel.toLowerCase() === "any"),
     );
+    if (filtered.length < 3) {
+      filtered = cars.filter(
+        (car) =>
+          (car.type === type || type.toLowerCase() === "any") &&
+          (car.fuel === fuel || fuel.toLowerCase() === "any"),
+      );
+    }
     let scored = filtered.map((car) => ({
       name: car.name,
       price: car.price,
@@ -24,9 +31,9 @@ router.post("/", (req, res) => {
       score: calculateScore(car, weights),
       reasons: getReasons(car),
     }));
-    scored.sort((a, b) => b.score - a.score);
-    const top5 = scored.slice(0, 5);
-    res.json({ cars: top5 });
+    scored.sort((a, b) => b.score - a.score || a.price - b.price);
+    const top3 = scored.slice(0, 3);
+    res.json({ cars: top3 });
   } catch (error) {
     res.status(500).json({ error: "Internal server error" });
   }

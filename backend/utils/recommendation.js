@@ -16,17 +16,29 @@ export function getRecommendedCars(cars, { budget, type, fuel, weights }) {
     car.price >= budget * 0.9 && car.price <= budget * 1.1;
   const typeMatches = (car) => matchesPreference(car.type, normalizedType);
   const fuelMatches = (car) => matchesPreference(car.fuel, normalizedFuel);
+  const expandedBudgetMatches = (car) =>
+    car.price >= budget * 0.7 && car.price <= budget * 1.3;
 
   let candidates = cars.filter(
     (car) => budgetMatches(car) && typeMatches(car) && fuelMatches(car),
   );
 
+  const sortByPriceDistance = (a, b) =>
+    Math.abs(a.price - budget) - Math.abs(b.price - budget);
+
   if (candidates.length < 3) {
-    candidates = cars.filter((car) => typeMatches(car) && fuelMatches(car));
+    const broader = cars.filter(
+      (car) =>
+        typeMatches(car) && fuelMatches(car) && expandedBudgetMatches(car),
+    );
+    candidates = broader.sort(sortByPriceDistance).slice(0, 10);
   }
 
   if (candidates.length < 3) {
-    candidates = cars;
+    candidates = cars
+      .filter(expandedBudgetMatches)
+      .sort(sortByPriceDistance)
+      .slice(0, 10);
   }
 
   return candidates

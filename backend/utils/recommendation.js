@@ -5,7 +5,8 @@ function normalizeValue(value) {
 }
 
 function matchesPreference(value, preference) {
-  return preference === "any" || value === preference;
+  const normalizedValue = normalizeValue(value);
+  return preference === "any" || normalizedValue === preference;
 }
 
 export function getRecommendedCars(cars, { budget, type, fuel, weights }) {

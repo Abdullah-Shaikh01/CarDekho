@@ -298,5 +298,105 @@
     "safety": 7,
     "performance": 6,
     "comfort": 6
+  },
+  {
+    "name": "Toyota Corolla Altis",
+    "price": 28,
+    "type": "Sedan",
+    "fuel": "Hybrid",
+    "mileage": 8,
+    "safety": 9,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Honda Accord",
+    "price": 32,
+    "type": "Sedan",
+    "fuel": "Hybrid",
+    "mileage": 7,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 9
+  },
+  {
+    "name": "Toyota Prius",
+    "price": 24,
+    "type": "Hatchback",
+    "fuel": "Hybrid",
+    "mileage": 10,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Kia Niro",
+    "price": 25,
+    "type": "SUV",
+    "fuel": "Hybrid",
+    "mileage": 9,
+    "safety": 8,
+    "performance": 7,
+    "comfort": 8
+  },
+  {
+    "name": "Hyundai Tucson",
+    "price": 27,
+    "type": "SUV",
+    "fuel": "Hybrid",
+    "mileage": 8,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 8
+  },
+  {
+    "name": "Honda Jazz",
+    "price": 8,
+    "type": "Hatchback",
+    "fuel": "Hybrid",
+    "mileage": 10,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Hyundai Venue",
+    "price": 11,
+    "type": "SUV",
+    "fuel": "Hybrid",
+    "mileage": 9,
+    "safety": 8,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "Lexus UX",
+    "price": 42,
+    "type": "SUV",
+    "fuel": "Hybrid",
+    "mileage": 7,
+    "safety": 9,
+    "performance": 8,
+    "comfort": 9
+  },
+  {
+    "name": "Maruti Ciaz Hybrid",
+    "price": 11,
+    "type": "Sedan",
+    "fuel": "Hybrid",
+    "mileage": 9,
+    "safety": 7,
+    "performance": 6,
+    "comfort": 7
+  },
+  {
+    "name": "BMW 3 Series",
+    "price": 45,
+    "type": "Sedan",
+    "fuel": "Hybrid",
+    "mileage": 6,
+    "safety": 9,
+    "performance": 9,
+    "comfort": 9
   }
 ]
